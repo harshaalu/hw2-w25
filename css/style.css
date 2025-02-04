@@ -13,6 +13,12 @@ h1 {
 }
 
 h2 {
+    font-size: 30px; 
+    color: #0D0D0D; 
+    text-align: center; 
+}
+
+h2.correct {
     font-size: 39px;
     color: #0D0D0D;
     text-align: inherit; /* Allows inheritance of text alignment from parent */
@@ -23,6 +29,11 @@ h2 {
 }
 
 p {
+    font-size: 24px;
+    padding: 10px 0 0 10px;
+}
+
+p.correct {
     font-size: 29.4px;
     padding: 10px 0 0 10px;
 }
@@ -42,6 +53,12 @@ div {
 
 .rounded-top {
     border-radius: 15px 15px 0 0;  /* Rounded top corners */
+}
+
+.introduction {
+    border-radius: 15px; 
+    margin-top: 15px;
+    line-height: 2; 
 }
 
 .introduction, .red, .blue, .yellow, .green {
