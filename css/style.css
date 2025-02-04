@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, Verdana, sans-serif;  /* Ensure both fonts are listed */
+    font-family: Arial, Verdana, sans-serif;
     background-color: #000000;
     color: #FFFFFF;
     margin: 20px 20px 0 20px;
@@ -8,18 +8,22 @@ body {
 
 h1 {
     font-size: 42px;
-    text-align: center;
     padding: 15px;
+    text-align: center;
 }
 
 h2 {
-    font-size: 30px; /* Adjusted to meet requirement */
-    color: #0D0D0D;
-    
+    font-size: 39px; 
+    color: #0D0D0D; 
+    text-align: inherit; 
+}
+
+.blue h2 {
+    color: #C4C4C4 !important;  /* Ensures this color has precedence */
 }
 
 p {
-    font-size: 24px; /* Corrected size */
+    font-size: 29.4px;
     padding: 10px 0 0 10px;
 }
 
@@ -33,52 +37,55 @@ img {
 div {
     min-height: 125px;
     padding: 20px;
-    border: 3px solid #FFFFFF; /* Ensure this applies correctly */
+    border: 3px solid #FFFFFF; /* Default white border for all divs */
+}
+
+.rounded-top {
+    border-radius: 15px 15px 0 0;  /* Rounded top corners */
 }
 
 .introduction {
-    border-radius: 15px;
+    border-radius: 15px; 
     margin-top: 15px;
-    line-height: 2;
-    text-align: left; /* Ensure text alignment is correct */
+    line-height: 2; 
 }
 
-.red, .blue, .yellow, .green {
-    text-align: inherit;
+.introduction, .red, .blue, .yellow, .green {
+    text-align: inherit; /* Ensures text alignment is inherited from specific class styles */
 }
 
 .red {
     background-color: #FF0000;
+    text-align: right;
     margin-left: 50px;
     border-bottom: 2px solid #FFFFFF;
     border-left: 5px solid #FFFFFF;
-    text-align: right;
 }
 
 .blue {
     background-color: #0000FF;
+    text-align: left;
     margin-right: 50px;
     border-right: 5px solid #FFFFFF;
     border-top: 2px solid #FFFFFF;
-    color: #C4C4C4; /* Correct contrast */
-    text-align: left;
+    color: #C4C4C4;
 }
 
 .yellow {
     background-color: #FFFF00;
+    text-align: right;
     margin-left: 50px;
     border-bottom: 2px solid #FFFFFF;
     border-left: 5px solid #FFFFFF;
-    color: #707070; /* Correct contrast */
-    text-align: right;
+    color: #707070;
 }
 
 .green {
-    background-color: #008500; /* Ensure using one of the specified hex codes */
+    background-color: #008500;
+    text-align: left;
     margin-right: 50px;
     border-right: 5px solid #FFFFFF;
     border-top: 2px solid #FFFFFF;
-    text-align: left;
 }
 
 footer {
